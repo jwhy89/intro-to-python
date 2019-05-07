@@ -1,3 +1,10 @@
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
 # testing print with hello world
 print("Hello, World!")
 
@@ -30,4 +37,3 @@ print("A") if a > b else print("=") if a == b else print("B")
 
 if a > b and c > a:
   print("Both conditions are True")
-
